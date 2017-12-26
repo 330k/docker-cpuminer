@@ -1,0 +1,2 @@
+# docker-cpuminer
+DockerHub test
