@@ -4,7 +4,7 @@ MAINTAINER 330k
 
 RUN apt-get update && apt-get upgrade -y && \
   apt-get install -y build-essential libcurl4-openssl-dev git automake && \
-  git clone https://github.com/bitzeny/cpuminer.git
+  git clone https://github.com/macchky/cpuminer.git
 
 WORKDIR cpuminer
 
