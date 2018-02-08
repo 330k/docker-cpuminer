@@ -9,7 +9,7 @@ RUN apt-get update && apt-get upgrade -y && \
 WORKDIR cpuminer
 
 RUN ./autogen.sh && \
-  ./configure CFLAGS="-O3 -march=native -funroll-loops -fomit-frame-pointer" && \
+  ./configure CFLAGS="-O3 -funroll-loops -fomit-frame-pointer" && \
   make
 
 ENTRYPOINT ["/cpuminer/minerd"]
